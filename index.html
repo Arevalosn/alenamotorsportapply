@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function redirectToLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'credit_application_es.html';
+            } else {
+                window.location.href = 'credit_application_en.html';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="image.png.jpg" alt="ALENA MOTORSPORT">
+    </header>
+    <main>
+        <h1>Select Your Language</h1>
+        <div class="language-buttons">
+            <button class="language-btn" onclick="redirectToLanguage('es')">Español</button>
+            <button class="language-btn" onclick="redirectToLanguage('en')">English</button>
+        </div>
+    </main>
+</body>
+</html>

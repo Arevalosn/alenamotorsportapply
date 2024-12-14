@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Crédito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-luminous">
+        <div class="header-overlay">
+            <img src="image.png.jpg" alt="ALENA MOTORSPORT">
+        </div>
+    </header>
+    <main>
+        <h1 class="main-title">Solicitud de Crédito</h1>
+        <form action="https://formspree.io/f/mldekyoj" method="POST">
+            <div>
+                <h2>Información Personal</h2>
+                <label for="fullName">Nombre Completo</label>
+                <input type="text" id="fullName" name="Nombre Completo" required>
+
+                <label for="dob">Fecha de Nacimiento</label>
+                <input type="date" id="dob" name="Fecha de Nacimiento" required>
+
+                <label for="social">Social/ITIN</label>
+                <input type="text" id="social" name="Social/ITIN" required>
+
+                <label for="creditScore">Puntaje de Crédito</label>
+                <input type="number" id="creditScore" name="Puntaje de Crédito" required>
+
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="Teléfono" required>
+
+                <label for="license">Licencia de Conducir</label>
+                <input type="text" id="license" name="Licencia de Conducir" required>
+
+                <label for="currentAddress">Dirección Actual</label>
+                <input type="text" id="currentAddress" name="Dirección Actual" required>
+
+                <label for="city">Ciudad</label>
+                <input type="text" id="city" name="Ciudad" required>
+
+                <label for="zip">Código Postal</label>
+                <input type="text" id="zip" name="Código Postal" required>
+            </div>
+
+            <div>
+                <h2>Información de Empleo</h2>
+                <label for="currentEmployer">Empleo Actual</label>
+                <input type="text" id="currentEmployer" name="Empleo Actual" required>
+
+                <label for="employerAddress">Dirección del Empleo</label>
+                <input type="text" id="employerAddress" name="Dirección del Empleo" required>
+
+                <label for="occupation">Ocupación</label>
+                <input type="text" id="occupation" name="Ocupación" required>
+
+                <label for="monthlyIncome">Ingreso Mensual</label>
+                <input type="number" id="monthlyIncome" name="Ingreso Mensual" required>
+
+                <label for="incomeType">Tipo de Ingreso</label>
+                <select id="incomeType" name="Tipo de Ingreso">
+                    <option value="w2">W2</option>
+                    <option value="1099">1099</option>
+                    <option value="selfEmployed">Autoempleado</option>
+                </select>
+            </div>
+
+            <div>
+                <h2>Información del Vehículo</h2>
+                <label for="makeModel">Marca y Modelo</label>
+                <input type="text" id="makeModel" name="Marca y Modelo" required>
+
+                <label for="vin">Últimos 6 del VIN</label>
+                <input type="text" id="vin" name="Últimos 6 del VIN" required>
+
+                <label for="downPayment">Pago Inicial Deseado</label>
+                <input type="number" id="downPayment" name="Pago Inicial Deseado" required>
+
+                <label for="monthlyPaymentDesired">Pago Mensual Deseado</label>
+                <input type="number" id="monthlyPaymentDesired" name="Pago Mensual Deseado" required>
+            </div>
+
+            <button class="submit-btn pulse" type="submit">Enviar Solicitud</button>
+        </form>
+    </main>
+</body>
+</html>
